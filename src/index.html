@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar Vendas</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <main>
+            <section class="pagina__1">
+                <form id="form" action="">
+                    <label for="numero_caixa_vendidas">n° de caixas</label>
+                    <input id="numero_caixa_vendidas" type="number" value="1">
+    
+                    <label for="valor__compra">Valor da compra R$</label>
+                    <input id="valor__compra" type="number" value="12">
+    
+                    <label for="metodo__pagamento">Forma de pagamento</label>
+    
+                    <select name="metodo__pagamento" id="metodo__pagamento">
+                        <option value="credito">Crédito</option>
+                        <option value="debito">Débito</option>
+                        <option value="dinheiro">Dinheiro</option>
+                        <option selected value="pix">Pix</option>
+                    </select>
+    
+                    <input id="submit" type="submit" value="Registrar" onclick="registrarDados()">
+    
+                </form>
+
+                <button onclick="exibirDados()">
+                    Exibir vendas
+                </button>
+
+            </section>
+
+            <section class="pagina__2">
+
+                <table class="tabela__vendas">
+                    <thead>
+                        <tr>
+                            <th>Número da compra</th>
+                            <th>Número de caixas</th>
+                            <th>Valor da compra</th>
+                            <th>Forma de pagamento</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="table__body"></tbody>
+                </table>
+
+                <button onclick="limparLocal()">
+                    Limpar Local
+                </button>
+
+            </section>
+        </main>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+@import url('./reset.css');
+@import url('./variaveis.css');
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+}
+
+.pagina__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor_fundo);
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+#numero_caixa_vendidas, #valor__compra, #metodo__pagamento {
+    background-color: var(--cor_fundo);
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+#submit , button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: var(--cor_fundo);
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#submit {
+    margin: 0;
+    margin-top: 20px;
+}
+
+input {
+    width: 50px;
+    margin: 5px 0 20px 0;
+}
+
+select {
+    margin-top: 10px;
+}
+
+button{
+    background-color: var(--cor_fundo);
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.pagina__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.pagina__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 20px 0;
+    color: black;
+}
+
+.tabela__vendas {
+    text-align: center;
+}
+
+thead {
+    background-color: var(--cor_fundo);
+    color: white;
+}
+
+thead tr th{
+    padding: 10px;
+    border: 2px solid black;
+}
+
+tbody tr {
+    background-color: rgb(165, 179, 241);
+    color: white;
+}
+
+tbody tr:nth-child(2n + 1) {
+    background-color: rgb(118, 157, 240);
+}
+
+tbody tr td {
+    border: 2px solid black;
+    padding: 5px;
+}
